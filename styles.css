@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-weight: bold;
+}
+.navcontainer{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease 0s;
+    padding: 16px;
+}
+.services{
+    width: 30vw;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 10px;
+    transition:all 0.4s ease 0s;
+}
+.service:hover{
+    background-color: #343cac;
+    width: 100px;
+    height: 28px;
+    padding-left: 26px;
+    padding-top: 6px;
+    margin: 0;
+    border-radius: 100px;
+    transition:all 0.5s ease 0s;
+}
+.google{
+    text-decoration: none;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: rgb(244, 255, 169);
+    font-size: 16px;
+    font-weight: bold;
+}
+.google:hover{
+transform: scale(0.98);
+background-color: rgba(244, 255, 169, 0.653);
+}
+.cardscontainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+.card1{
+    width: auto;
+    height: 30vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.cardimage{
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+}
+.carddetails{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardtitle{
+    margin: 10px;
+}
+.carddescription{
+    font-size: 14px;
+    margin: 10px;
+    height: 30%;
+    width: auto;
+
+}
+.cardbutton{
+    font-size: 14px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    width: 30%;
+    height: 45px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-left: 12px;
+    text-decoration: none;
+    border: none;
+    background-color: #000cac;
+    color: #ffffff;
+    border-radius: 100px;
+}
+.cardbutton:hover{
+    background-color: #000ed7f5;
+    transform: scale(0.9);
+}
+
+@media (max-width:400px) {
+    .navcontainer{
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    .google{
+        width: 80vw;
+    }
+    .services{
+        width: 70vw;
+        font-size: 12px;
+        font-weight:light;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .cardtitle{
+        font-size: 26px;
+    }
+    .cardscontainer{
+        align-items: center;
+    }
+    .carddescription{
+        display: none;
+    }
+    .card1{
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        height: auto;
+        
+    }
+    .cardimage{
+        width: 100%;
+        height: auto;
+    }
+    .carddetails{
+        width: 90%;
+        height: auto;
+        padding: 0;
+    }
+    .cardbutton{
+        font-size: 16px;
+        width: 110%;
+        height: 50px;
+        border-radius: 6px;
+        margin: 0;
+        
+    }
+}
+
